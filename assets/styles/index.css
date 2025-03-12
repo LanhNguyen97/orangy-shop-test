@@ -127,7 +127,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .introduction-wrapper__image-section {
     gap: 8px;
   }
@@ -142,7 +142,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .lora-title {
     font-size: 32px;
     line-height: 42px;
@@ -266,6 +266,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .favorite-palces-wrapper {
+    padding: 16px 8.23px;
+  }
+
   .favorite-palces-wrapper__item {
     flex-direction: column;
     width: 100%;
@@ -285,4 +289,8 @@ body {
   }
 }
 
-
+@media screen and (min-width: 600px) {
+  .favorite-palces-wrapper__item__image-wrapper {
+    height: 800px;
+  }
+}
