@@ -20,3 +20,143 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.lora-title {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.lato-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.lato-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.lato-heading {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.introduction-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+.introduction-wrapper__image-section__wrapper {
+  width: 50%;
+  position: relative;
+  height: auto;
+  max-width: 385px;
+  max-height: 628px;
+}
+
+.introduction-wrapper__image-section__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: inherit;
+  height: inherit;
+  border-radius: 16px;
+  left: 0;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.introduction-wrapper__image-section__wrapper__img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.introduction-wrapper__image-section {
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: inherit;
+}
+
+@media screen and (max-width: 375px) {
+  .introduction-wrapper {
+    gap: 27px;
+    padding-left: 8.23px;
+    padding-right: 8.23px;
+  }
+
+  .introduction-wrapper__image-section {
+    gap: 4px;
+  }
+
+  .introduction-wrapper__image-section__wrapper {
+    height: 289px;
+  }
+
+  .introduction-wrapper__image-section__wrapper__img {
+    max-width: 100%;
+    height: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction-wrapper__image-section {
+    gap: 8px;
+  }
+
+  .introduction-wrapper__image-section__wrapper {
+    height: 350px;
+  }
+
+  .introduction-wrapper__image-section__wrapper__img {
+    max-width: 100%;
+    height: inherit;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .introduction-wrapper {
+    max-width: 600px;
+  }
+
+  .introduction-wrapper__image-section__wrapper {
+    max-width: 270px;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lato-text {
+    font-size: 16px;
+  }
+
+  .lato-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
