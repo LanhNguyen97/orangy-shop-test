@@ -258,6 +258,7 @@ body {
   }
   .favorite-palces-wrapper__item__image-wrapper {
     width: 100%;
+    max-width: 100%;
   }
   .favorite-palces-wrapper__item__content-container {
     width: 100%;
